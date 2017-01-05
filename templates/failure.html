@@ -1,0 +1,30 @@
+$def with (form, comments)
+
+<h1>Critical Failure Generator</h1>
+
+<br>
+<br>
+<br>
+
+Your one-stop shop for bad things happening!
+
+<br>
+<br>
+<br>
+
+<form name="main" method="post"> 
+$if not form.valid: <p class="error">Try again.:</p>
+$:form.render()
+<br>
+<input type="submit" />    </form>
+
+<br>
+<br>
+<br>
+$comments
+
+<br>
+<br>
+<br>
+<br>
+<a href="index">BACK TO HOME</a><br>

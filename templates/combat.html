@@ -1,0 +1,31 @@
+$def with (form, comments, debug)
+
+<h1>OH SHIT It's the Combat Resolution tool!</h1>
+
+<br>
+<br>
+<br>
+
+I'd like to thank my good friends, coffee and ADHD.
+
+<br>
+<br>
+<br>
+
+<form name="main" method="post"> 
+$if not form.valid: <p class="error">Try again.:</p>
+$:form.render()
+<br>
+<input type="submit" />    </form>
+
+<br>
+<br>
+<br>
+$comments
+
+<br>
+<br>
+$debug
+<br>
+<br>
+<a href="index">BACK TO HOME</a><br>

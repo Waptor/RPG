@@ -1,0 +1,33 @@
+$def with (form, comments)
+
+<h1>Super Quick Full Auto Calculator</h1>
+
+<br>
+<br>
+<br>
+
+Type in your Firearm skill, number of shots you wish to fire, and your attack roll.<br><br>
+Note that the maximum number of shots you can fire this turn is one-fifth your Firearm skill + 1.<br>
+(Just look at your Firearm skill's Extreme Success box and add 1.)
+
+<br>
+<br>
+<br>
+
+<form name="main" method="post"> 
+$if not form.valid: <p class="error">Try again.:</p>
+$:form.render()
+<br>
+<input type="submit" />    </form>
+
+<br>
+<br>
+<br>
+$comments
+
+<br>
+<br>
+<br>
+<a href="armor">Head on over to the Armor Penetration calculator while you roll for damage!</a><br>
+<br>
+<a href="index">BACK TO HOME</a><br>
